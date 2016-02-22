@@ -1,0 +1,1822 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 10, 2016, 10:27:04 AM
+    Author     : Alexandria Lenz
+*/
+
+
+body {
+    background-image: url(images/background.jpg);
+    /* height: 1200px; */
+    z-index: -1;
+    margin-bottom: 0px;
+    /* margin: 10px; */
+}
+
+
+.body {
+    width: 1100px;
+    margin: auto;
+    display: block;
+    background-color: #fff;
+    z-index:0;
+    margin-top: -2em;
+    /* height: 1300px; */
+}
+
+/***** HOME PAGE ******/
+
+#banner {
+    display: block;
+    margin: auto;
+    /* margin-top: 1em; */
+    transition-duration: 3s;
+    width: 92%;
+    margin-top: .5em; 
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.upperdivider img {
+    position: absolute;
+    display: block;
+    margin-left: 45px;
+    text-align: center;
+    width: 1010px;
+    /* padding-bottom: 3px; */
+}
+
+#logo {
+    width: 35%;
+    height: auto;
+    display: block; 
+    margin: auto; 
+    padding-top: 3em;
+    padding-bottom: 1em; 
+}
+
+#designhandmade {
+    display: inline-block;
+    /* margin: auto; */
+    width: 100%;
+    padding-top: .5em;
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+#design {
+    width: 61%;
+}
+
+#handmade {
+    width: 30%; 
+    padding-left: 6px;
+}
+
+#roundbuttons {
+    display: inline-block;
+    /* margin: auto; */
+    width: 1100px;
+    padding-top: .5em;
+    text-align: center; 
+    margin-top: 4em;
+    z-index:3; 
+    position: relative; 
+
+}
+
+#round1 {
+    width: 25%;
+}
+
+#round2 {
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 30%;
+}
+
+#round3 {
+    width: 25%; 
+}
+
+#homepp {
+    margin-top: .5em;
+    position: absolute;
+    display:inline-block;
+    text-align: center; 
+    z-index: 2;
+    margin-left: 160px;
+}
+
+#homepp img{
+    width: 60%;
+
+}
+
+.footerdivider img{
+    position: absolute; 
+    display: block;
+    margin-left: 45px; 
+    text-align: center;
+    width: 1010px; 
+}
+
+#tealbar {
+    margin-left: -2em;
+    width:100%;
+
+}
+
+
+#demo {
+
+}
+
+#demos h2{
+    display: block; 
+    margin: auto;
+    text-align: center; 
+    text-transform: uppercase;
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 16px;
+    color: #929395;
+}
+
+
+#demos #faqpink {
+    display: block; 
+    margin: auto;
+    text-align: center; 
+    text-transform: uppercase;
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 25px;
+    color: #be69a1;
+}
+
+#explain {
+    padding-top: 4em;
+}
+
+#faq {
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 20px;
+    color: #929395;
+    /* padding-bottom: 1em; */
+    padding-top: 1em;
+}
+
+area {
+    outline: none;
+}
+
+/**************/
+/* NAVIGATION */
+/****~~~~~~~~*/
+
+
+
+
+@font-face {
+    font-family: 'contax_pro_45_ligregular';
+    src: url('font/contaxpro45lig-webfont.eot');
+    src: url('font/contaxpro45lig-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/contaxpro45lig-webfont.woff2') format('woff2'),
+        url('font/contaxpro45lig-webfont.woff') format('woff'),
+        url('font/contaxpro45lig-webfont.ttf') format('truetype'),
+        url('font/contaxpro45lig-webfont.svg#contax_pro_45_ligregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+nav {
+    height: 35px;
+    width: 100%;
+    padding-top: 8px;
+    text-align: center;
+}
+
+nav ul {
+    width: 100%;
+    display: inline-block;
+    padding: 0px;
+    margin-left: 45px;
+}
+
+.submenu {
+    display: none;
+}
+
+
+
+ul li {
+    display: table-cell;
+    text-align: center;
+}
+
+ul li a{
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    color: #929395;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+ul li a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #be69a1;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+ul li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+ul li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+
+}
+
+/*Hide dropdown links until they are needed*/
+ul li ul {
+    display: none;
+    /* position:  absolute; */
+}
+
+/*Make dropdown links vertical*/
+ul li ul li {
+    display: block;
+    float: none;
+}
+
+ul li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block; 
+    font-size: .75em;
+    padding: 10px 0; 
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #a4ddca;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/****************************************FAQ********************/
+
+#supportbuttons {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    /* padding-top: 4em; */
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#supportbuttons2 {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    padding-top: 4em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.supportbutton {
+    width: 13%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
+.supportbutton img {
+    width: 90%;
+    /* margin-left: 30px; */
+}
+
+
+.ajaxsupport {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 2em;
+}
+
+.hiddenanswer {
+    display: none;
+}
+
+.faqquestions {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 20px;
+    color: #be69a1;
+    /* padding-bottom: 1em; */
+}
+
+.faqquestions:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 20px;
+    color: #a4ddca;
+    text-decoration: none;
+
+}
+
+.faqquestions:visited {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 20px;
+    color: #a4ddca;
+    text-decoration: none;
+}
+
+.faqquestions:focus {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 20px;
+    color: #be69a1;
+    text-decoration: none;
+}
+
+#returnpolicy {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+}
+
+#returnpolicy a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#returnpolicy a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#wrongorder {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#wrongorder a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#wrongorder a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#processingtime {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#processingtime a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#processingtime a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#layouts {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#layouts a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#layouts a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#sizeplanner {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#sizeplanner a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#sizeplanner a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#laminatedtabs {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#laminatedtabs a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#laminatedtabs a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#changeinside {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#changeinside a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#changeinside a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#changespread {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#changespread a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#changespread a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#manypages {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#manypages a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#manypages a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#manynotepages {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#manynotepages a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#manynotepages a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#covermat {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#covermat a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#covermat a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#shipmethod {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#shipmethod a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#shipmethod a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#wrongaddress {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#wrongaddress a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#wrongaddress a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#shipbox {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#shipbox a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#shipbox a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#trackingupdate {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#trackingupdate a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#trackingupdate a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#shipcountries {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#shipcountries a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#shipcountries a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#intlship {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#intlship a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#intlship a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#cancelpolicy {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#cancelpolicy a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#cancelpolicy a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#phonenumber {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#phonenumber a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#phonenumber a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#changeorder {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#changeorder a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#changeorder a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#rushorder {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#rushorder a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#rushorder a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#makeplanner {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#makeplanner a {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+}
+
+#makeplanner a:hover {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    text-decoration: none;
+    color: #a4ddca; 
+}
+
+#cat {
+    display: block;
+    margin: auto;
+    padding-top: 2em;
+}
+
+#catcaption {
+    display:block;
+    margin: auto;
+    text-align: center;
+
+}
+
+map:focus {outline:0;}
+
+
+#contactbody {
+
+}
+
+#contactbody img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding-top: 3em;
+}
+
+map {
+    /* display: inline; */
+    padding-right: 140px;
+}
+
+
+#contactcontent {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 14px;
+    color: #929395;
+    text-decoration: none;
+}
+
+.purple {
+    color: #be69a1;
+}
+
+/**************ABOUT****************/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+.carousel {
+    position: absolute;
+    width: 90%;
+    /* border-radius: 25px; */
+}
+
+#myCarousel {
+    position: absolute;
+    margin-top: -15px;
+}
+
+.clickover {
+    position: absolute;
+    margin-top: 320px;
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 14px;
+    color: #929395;
+    text-align: center;
+}
+
+.font {
+    font-family: 'contax_pro_45_ligregular', sans-serif;
+    font-size: 14px;
+    color: #929395;
+    text-align: center;
+}
+
+#abouttxt {
+    padding-left: 75px;
+    /* padding-right: 55px; */
+    margin-top: 70px;
+    position: absolute;
+    width: 1000px;
+}
+
+.header img{
+    position: absolute;
+    display: inline-block;
+    /* margin-left: 45px; */
+    text-align: center;
+    width: 1010px;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+
+}
+
+#aboutimages {
+    position: relative;
+    width: 100%; 
+    margin-top: 300px;
+}
+
+#aboutimages img {
+    width: 80%;
+    display: block;
+    margin-left: 115px;
+}
+
+/**************FOOTER***************/
+
+#footer {
+    background-color: #fff;
+    margin-top: 3em;
+    position: relative;
+}
+
+#rightside {
+    float: right;
+    width: 50%;
+    background-color: #fff;
+    /* margin-bottom: 50px; */
+    padding-top: 5px;
+    margin-right: 6px;
+}
+
+#right {
+    float: right;
+    display: inline-block;
+    padding-right: 3em;
+}
+
+.socialicon {
+    width: 30px; 
+}
+
+#leftside {
+    float: left;
+    width: 20%;
+    display: inline-block;
+    background-color: #fff;
+    padding-left: 43px;
+}
+
+button {
+    width: 23%;
+    background: transparent;
+    border: none;
+    /* margin-top: -1px; */
+    margin-left: 200px;
+    /* padding-bottom: 10px; */
+}
+
+#joinnow img {
+    width: 70px;
+    position: relative;
+    /* display: inline-block; */
+    margin-left: 150px;
+    bottom: 3px;
+}
+
+.footertext {
+    font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+    font-size: .75em;
+    color: #929395;
+    /* padding-left: 43px; */
+    /* bottom: 10px; */
+}
+
+#changesreturns {
+    float:right;
+    color: #929395;
+    padding-top: 10px;
+}
+
+#rightabout {
+    float: right;
+    color: #929395;
+    padding-top: 10px;
+}
+
+#changesreturns a{
+    color: #929395;
+}
+
+#rightabout a{
+    color: #929395;
+}
+
+#socialbuttons {
+    /* padding-left: 140px; */
+    float: left;
+    width: 65%;
+    padding-top: 15px;
+    padding-left: 240px;
+}
+
+#socialbuttons img {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#center {
+
+    width: 76px;
+
+    float: right;
+
+    margin-right: 40px;
+}
+
+#right {
+
+    width: 76px;padding-right: .5em;/* margin-left: -90px; *//* margin-right: -10px; *//* height: 20px; */margin-bottom: 10px;}
+
+#right img{
+
+    margin-top: 5px;
+
+}
+
+#center img{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+
+#emailsignup p {
+    /* padding-left: 43px; */
+    font-size: 11px;
+    /* width: 150px; */
+    margin-top: 10px;
+}
+
+input:placeholder-shown {
+    font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+    font-size: .75em;
+}
+
+input {
+    width: 150px;
+    height: 20px;
+    margin-left: 43px;
+    float: left;
+    position: absolute;
+    /* padding-bottom: 10px; */
+    padding-left: 10px;
+}
+
+.footertext a {
+    text-decoration: none;
+    /* padding-top: 10px; */
+}
+
+#socialbuttons a {
+    text-decoration: none;
+}
+
+
+
+/***tealbar***/
+
+
+#email a {
+    float: right;
+    text-decoration: none;
+    color: #a4ddca;
+}
+
+#copywrite {
+    color: #a4ddca;
+    z-index: 5;
+    margin-top: 100px;
+    padding-left: 45px;
+    position: absolute;
+    font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    z-index: 5;
+    width: 40%;
+    float: left;
+}
+
+#email {
+
+    position: absolute;
+    font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    z-index: 6;
+    float: right;
+    padding-left: 0px;
+    width: 100px;
+    bottom: 30px;
+    color: #a4ddca;
+    bottom: auto;
+    margin-right: 0px;margin-left: 955px;
+    margin-top: 100px;}
+
+.upperdivider2 img {
+    position: absolute;
+    display: block;
+    margin-left: 45px;
+    text-align: center;
+    width: 1010px;
+    margin-top: 70px;
+} 
+
+br {
+    display: block;
+    line-height:22px;
+}
+
+#end {
+    width: 100%;
+    height: 150px;
+    z-index: 3;
+    background-color: #fff;
+    /* margin-top: 20px; */
+}
+
+
+/*>>>>>>>>>>ADD ON PAGES<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.sidenav {
+    position: relative;
+    float: left;
+    width: 20%;
+    /* height: 200px; */
+    text-align: left;
+    display: block;
+    margin-left: 0px;
+    padding-bottom: 10px;
+}
+
+.addonbutton {
+    width: 70%;
+    text-align: left;
+    margin-left: 60px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    background-color: #fff;
+    border: none;
+    text-transform: uppercase;
+    color: #929395;
+
+}
+
+
+.addonbutton:hover {
+    width: 150px;
+    text-align: left;
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    background-image: url('images/plum_arrow.jpg');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+button:focus {outline:0;}
+
+
+.ajaxbody {
+    position: relative;
+    display: block;
+    float: right;
+    width: 80%;
+    /* margin-bottom: 10px; */
+}
+
+.ajax {
+    display: block;
+    width: 100%;
+    height: 650px;
+    background-color: #fff;
+    position: relative;
+    /* padding-bottom: 10px; */
+    /* padding-top: 30px; */
+    top: 30px;
+}
+
+.ajaxproducts {
+    display: block;
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    position: relative;
+    /* padding-bottom: 10px; */
+    /* padding-top: 30px; */
+    top: 30px;
+}
+
+.addonimage img {
+    width: 70%;
+}
+
+.limits {
+    width: 100%;
+    position: relative;
+    /* float: right; */
+}
+
+.limits img {
+    width: 76%;
+    display: block;
+    /* margin: auto; */
+    position: relative;
+    padding-top: 3em;
+    /* float: right; */
+    margin-left: 220px;
+}
+
+
+.verticaldivider {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    /* position: absolute; */
+    /* width: 70%; */
+    display: block;
+}
+
+.verticaldivider img {
+    margin-bottom: 0px;
+    position: absolute;
+    width: 1000px;
+    top: 330px;
+    left: 525px;
+}
+/******************************/
+/*Responsive Styles*/
+/*****************************/
+
+
+
+@media screen and (max-width : 900px){
+    /*Make dropdown links appear inline*/
+    .body {
+        width: 90%; 
+        height: 100%;
+    }
+
+    /** grey lines 8**/
+    .footerdivider {
+        display: hidden;
+    }
+
+    .upperdivider {
+        display: none;
+        /* position: absolute; */
+        /* width: 120px; */
+    }
+
+    .upperdivider img {
+        position: absolute;
+        display: block;
+        margin-left: 45px;
+        text-align: center;
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    #homepp {
+        display: none;
+        /* position: absolute; */
+        /* margin-left: 50px; */
+    }
+
+    #roundbuttons {
+        width: 90%;
+        display: inline;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 4em;
+    }    
+
+
+
+    /**************ABOUT****************/
+    .font {
+        font-family: 'contax_pro_45_ligregular', sans-serif;
+        font-size: 14px;
+        color: #929395;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    #abouttxt {
+        position: relative;
+        /* margin-right: 20px; */
+        /* margin-left: 0px; */
+        margin-top: 1em;
+        width: 90%;
+    }
+
+    .header img{
+        position: relative;
+        width: 90%;
+        margin-top: 1em;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    #aboutimages {
+        position: relative;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    #aboutimages img {
+        width: 80%;
+        display: block;
+        margin-left: 80px;
+    }
+
+    /****FOOTER*****/  
+
+
+    #footer {
+        margin-top: 0px;
+        /* padding-top: 15em; */
+        background-color: #fff;
+        width: 100%;
+        padding-bottom: 250px;
+        position: relative;
+    }
+
+    #rightside {
+        float: right;
+        width: 100%;
+        background-color: #fff;
+        padding-bottom: 5px;
+        /* padding-top: 10px; */
+        padding-left: 10px;
+        /* margin-top: 140px; */
+        margin-right: -5px;
+    }
+
+    #right {
+        float: right;
+        display: inline-block;
+        padding-right: 3em;
+
+    }
+
+    .socialicon {
+        width: 30px; 
+        padding-left: 10px;
+    }
+
+    #leftside {
+        float: left;
+        width: 0%;
+        display: inline-block;
+        background-color: #fff;
+        /* padding-bottom: 50px; */
+        margin-top: 30px;
+        /* margin-left: 10px; */
+    }
+
+    button {
+        width: 120px;
+        background: transparent;
+        border: none;
+        margin-top: 40px;
+        margin-left: 37px;
+        /* padding-bottom: 10px; */
+    }
+
+    #joinnow img {
+        width: 100%; 
+    }
+
+    .footertext {
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+        color: #929395;
+    }
+
+    #changesreturns {
+        float:right;
+        color: #929395;
+    }
+
+    #rightabout {
+        float: right;
+        color: #929395;
+    }
+
+    #changesreturns a{
+        color: #929395;
+    }
+
+    #rightabout a{
+        color: #929395;
+    }
+
+    #socialbuttons {
+        padding-left: 0px;
+        float: left;
+        width: 110px;
+        padding-top: 15px;
+        padding-left: 40px;
+        margin-top: 0px;
+    }
+
+    #socialbuttons img {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    #center {
+
+        width: 76px;
+
+        float: right;
+
+        margin-right: 40px;
+    }
+
+    #right {
+
+        width: 76px;
+
+        padding-right: .5em;
+        margin-left: -90px;
+        margin-right: -10px;
+    }
+
+    #right img{
+
+        margin-top: 5px;
+
+    }
+
+    #center img{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+
+    .footertext a {
+        text-decoration: none;
+    }
+
+    #socialbuttons a {
+        text-decoration: none;
+    }
+
+
+
+    /***tealbar***/
+
+    #tealbartext {
+        width: 100%; 
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+    }
+
+    #copywrite {
+        color: #929395;
+        width: 100%;
+        padding-left: 40px;
+        margin-top: 220px;
+        background-color: #fff;
+    }
+
+    #email{
+        margin-top: 200px;
+        /* margin-right: 500px; */
+        margin-left: 100px;
+        /* margin-bottom: 5px; */
+        /* padding-bottom: 15px; */
+        /* padding-left: 100px; */
+        /* padding-right: 900px; */
+        /* padding-top: 15px; */
+        position: absolute;
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        z-index: 5;
+        /* width: 700px; */
+        /* float: left; */
+        background-color: #fff;
+    }
+
+    #email a {
+        color: #a4ddca;
+        padding-left: 10px;
+    }
+
+    br {
+        display: block;
+        line-height:22px;
+    }
+
+    #end {
+        display:none;
+    }
+
+
+    /***** MOBILE NAV ******/
+
+
+    /*Make dropdown links appear inline*/
+    nav ul {
+        position: relative;
+        display: block;
+        border: none;
+        width: 100%;
+        height: inherit;
+        margin-left: 0px;
+        padding: 0px;
+        text-align: center;
+
+    }     
+
+    /*Create vertical spacing*/
+    nav li {
+        margin-bottom: 1px;
+        position: relative;
+        border: none;
+        width: 30%;
+        float: left;
+        display: inline-block;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+        border: none;
+    }
+
+    nav li a {
+        border: none;
+        width: 190px;
+        text-align: center;
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    nav li a:hover {
+        border: none;
+        width: 190px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    #aboutplum {
+        margin: 0px;
+        border: none;
+    } 
+
+    .footerdivider img {
+        display:none;
+    }
+
+    .upperdivider2 img {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 650px){
+
+    .body {
+        width: 90%; 
+        height: 100%;
+    }
+
+    /** grey lines 8**/
+    .footerdivider {
+        display: none;
+    }
+
+    .upperdivider {
+        display: none; 
+    }
+
+    #homepp {
+        display: none;
+    }
+
+    #roundbuttons {
+        width: 80%;
+        display: inline;
+        padding: 0px;
+        margin-top: 10px;
+        margin-left: 2em;
+        margin-right: auto;
+    }    
+    /****FOOTER*****/    
+    #footer {
+
+        background-color: #fff;
+        margin-top: 0px;
+        /* padding-top: 15em; */
+        background-color: #fff;
+        width: 100%;
+        padding-bottom: 250px;
+        position: relative;
+    }
+
+
+    #rightside {
+        float: right;
+        width: 100%;
+        background-color: #fff;
+        /* padding-bottom: 150px; */
+        padding-top: 0px;
+        padding-left: 10px;
+        /* margin-bottom: 50px; */
+    }
+
+    #right {
+        float: right;
+        display: inline-block;
+        padding-right: 3em;
+
+    }
+
+    .socialicon {
+        width: 30px; 
+        padding-left: 10px;
+    }
+
+    #leftside {
+        float: left;
+        width: 0%;
+        display: inline-block;
+        background-color: #fff;
+        /* padding-bottom: 50px; */
+    }
+
+    button {
+        width: 100px;
+        background: transparent;
+        border: none;
+        margin-top: 40px;
+        margin-left: 37px;
+        padding-bottom: 10px;
+    }
+
+    #joinnow img {
+        width: 100%; 
+    }
+
+    .footertext {
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+        color: #929395;
+    }
+
+    #changesreturns {
+        float:right;
+        color: #929395;
+    }
+
+    #rightabout {
+        float: right;
+        color: #929395;
+    }
+
+    #changesreturns a{
+        color: #929395;
+    }
+
+    #rightabout a{
+        color: #929395;
+    }
+
+    #socialbuttons {
+        padding-left: 0px;
+        float: left;
+        width: 110px;
+        padding-top: 15px;
+        padding-left: 40px;
+    }
+
+    #socialbuttons img {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    #center {
+
+        width: 76px;
+
+        float: right;
+
+        margin-right: 40px;
+    }
+
+    #right {
+
+        width: 76px;
+
+        padding-right: .5em;
+        margin-left: -90px;
+        margin-right: -10px;
+    }
+
+    #right img{
+
+        margin-top: 5px;
+
+    }
+
+    #center img{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+
+    .footertext a {
+        text-decoration: none;
+    }
+
+    #socialbuttons a {
+        text-decoration: none;
+    }
+
+
+
+    /***tealbar***/
+
+    #tealbartext {
+        width: 100%; 
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+    }
+
+    #copywrite {
+        color: #929395;
+        width: 100%;
+        padding-left: 40px;
+        position: absolute;
+        margin-top: 230px;
+        padding-bottom: 5px;
+    }
+
+    #email{
+        margin-top: 200px;
+        margin-right: 500px;
+        margin-left: 0px;
+        padding-bottom: 15px;
+        padding-left: 100px;
+        /* padding-top: 35px; */
+        position: absolute;
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        z-index: 5;
+        /* width: 100%; */
+        float: left;
+    }
+
+    #email a {
+        color: #19c589;
+        padding-left: 10px;
+    }
+
+    br {
+        display: block;
+        line-height:22px;
+    }
+
+    #end {
+        display:none;
+    }
+
+
+
+
+
+    /**** NAV ****/    
+
+    /*Make dropdown links appear inline*/
+    nav ul {
+        position: relative;
+        display: block;
+        border: none;
+    }     
+
+    /*Create vertical spacing*/
+    ul li {
+        margin-bottom: 1px;
+        position: relative;
+        border: none;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+        border: none;
+    }
+
+    nav li a {
+        border: none;
+    }
+
+    nav li a:hover {
+        border: none;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    #aboutplum {
+        margin: 0px;
+        border: none;
+    }
+    /**************ABOUT****************/
+    .font {
+        font-family: 'contax_pro_45_ligregular', sans-serif;
+        font-size: 14px;
+        color: #929395;
+        text-align: center;
+        margin-right: 4em;
+    }
+
+    #abouttxt {
+        position: relative;
+        /* margin-right: 20px; */
+        /* margin-left: 0px; */
+        margin-top: 1em;
+        width: 90%;
+    }
+
+    .header img{
+        position: relative;
+        width: 90%;
+        margin-top: 1em;
+        margin-left: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    #aboutimages {
+        position: relative;
+        width: 90%;
+        margin-top: 1em;
+        /* margin-right: 2em; */
+    }
+
+    #aboutimages img {
+        width: 80%;
+        display: block;
+        margin-left: 5em;
+    }
+}
+
+
+
+

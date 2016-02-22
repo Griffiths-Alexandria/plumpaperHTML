@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Plum Paper">
+        <meta name="author" content="Alexandria Lenz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" href="plumstylesheet.css">
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+        <link rel="icon" href="/favicon.png" type="image/x-icon">
+
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+        <title>Plum Support</title>
+        <script>
+
+            function loadDocAccount() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (xhttp.readyState === 4 && xhttp.status === 200) {
+                        document.getElementById("demos").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "questions/account.html", true);
+                xhttp.send();
+            }
+
+            function loadDocGeneral() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (xhttp.readyState === 4 && xhttp.status === 200) {
+                        document.getElementById("demos").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "questions/general.html", true);
+                xhttp.send();
+            }
+
+            function loadDocPlacing() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (xhttp.readyState === 4 && xhttp.status === 200) {
+                        document.getElementById("demos").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "questions/placing.html", true);
+                xhttp.send();
+            }
+            function loadDocPending() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (xhttp.readyState === 4 && xhttp.status === 200) {
+                        document.getElementById("demos").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "questions/pending.html", true);
+                xhttp.send();
+            }
+            function loadDocShipping() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (xhttp.readyState === 4 && xhttp.status === 200) {
+                        document.getElementById("demos").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "questions/shipping.html", true);
+                xhttp.send();
+            }
+            function loadDocProblem() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (xhttp.readyState === 4 && xhttp.status === 200) {
+                        document.getElementById("demos").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "questions/problem.html", true);
+                xhttp.send();
+            }
+            function loadDocReturns() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (xhttp.readyState === 4 && xhttp.status === 200) {
+                        document.getElementById("demos").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "questions/returns.html", true);
+                xhttp.send();
+            }
+
+
+        </script>
+    </head>
+
+    <body>
+
+        <div class="body">  
+
+
+            <div id="navigation">
+                <script type="text/javascript">
+                    function nav() {
+                        $('.nav li').hover(function () {
+                            $(this).find('ul:first').stop().animate({height: '200px', opacity: '100'}, {queue: false, duration: 200, easing: 'easeInSine'})
+                        }, function () {
+                            $(this).find('ul:first').stop().animate({height: '0px', opacity: '0'}, {queue: false, duration: 100, easing: 'easeInCirc'})
+                        });
+                    }
+                    ;
+                    $(document).ready(function () {
+                        nav();
+                    });
+                </script>
+
+
+
+                <div>
+                    <a href="index.html"><img src="images/plum_logo.jpg" alt="logo" id="logo"></a>
+                </div>
+
+                <div class="upperdivider">
+                    <img src="images/home_divider_line.png" alt="divider">
+                </div>
+
+                <nav>
+
+                    <label for="show-menu" class="show-menu">Menu</label>
+                    <input type="checkbox" id="show-menu" role="button">
+
+                    <ul>
+
+                        <li><a href="index.html" title="Home">home</a></li>
+                        <li class="navimage"><a href="products.html" title="products">learn about our products</a>
+                            <!--<ul>
+                                <li><a href="/subpages/">ME Planners (Family Planner)</a></li>
+                                <li><a href="/subpages/">Regular Planners</a></li>
+                                <li><a href="/subpages/">Monthly Notebook Planners</a></li>
+                                <li><a href="/subpages/">Teacher Planners</a></li>
+                                <li><a href="/subpages/">Student Planners</a></li>
+                                <li><a href="/subpages/">Fitness Planners</a></li>
+                                <li><a href="/subpages/">Address Book</a></li>
+                                <li><a href="/subpages/">Memory Keeper Book</a></li>
+                                <li><a href="/subpages/">Notebooks</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="navimage"><a href="addons.html" title="addons">learn about our add ons</a>
+                            <!--<ul class="hidden">
+                                <li><a href="/subpages/">My Home Planning Section</a></li>
+                                <li><a href="/subpages/">Fitness Planner Section</a></li>
+                                <li><a href="/subpages/">Meal Planning Section</a></li>
+                                <li><a href="/subpages/">Blog Planning Section</a></li>
+                                <li><a href="/subpages/">Direct Sales Planning Section</a></li>
+                                <li><a href="/subpages/">Baby Planning Section</a></li>
+                                <li><a href="/subpages/">Wedding Planning Section</a></li>
+                                <li><a href="/subpages/">My Class Section</a></li>
+                                <li><a href="/subpages/">Notes Pages</a></li>
+                                <li><a href="/subpages/">To-Do List Pages</a></li>
+                                <li><a href="/subpages/">Bill Tracker Pages</a></li>
+                                <li><a href="/subpages/">Monthly Cleaning Pages</a></li>
+                                <li><a href="/subpages/">Checklist Pages</a></li>
+                                <li><a href="/subpages/">Contact Pages</a></li>
+                                <li><a href="/subpages/">Stickers</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="navimage"><a href="shop.html" title="shop">shop</a></li>
+                        <li class="navimage"><a href="contact.html" title="contact">contact us</a></li>
+                        <li><a href="faq.html" title="faqs">support</a>
+                            <!--<ul class="hidden">
+                                <li><a href="/subpages/">General Questions</a></li>
+                                <li><a href="/subpages/">Ordering Questions</a></li>
+                                <li><a href="/subpages/">Planner Questions</a></li>
+                            </ul>-->
+                        </li>
+                        <li><a href="about.html" title="about" id="aboutplum">about plum</a></li>
+                    </ul>
+
+                </nav>
+
+
+
+            </div>
+
+            <div class="upperdivider">
+                <img src="images/home_divider_line.png" alt="divider">
+            </div>
+
+            <div class="header">
+                <img src="images/support/plumsupport.png" alt="supportheader">
+            </div>
+
+            <div id="supportbuttons2">
+                <button onclick="loadDocAccount()" class="supportbutton"><img src="images/support/account.png" alt="accountbutton"></button>
+                <button onclick="loadDocGeneral()" class="supportbutton"><img src="images/support/generalquestions.png" alt="generalbutton"></button>
+                <button onclick="loadDocPlacing()" class="supportbutton"><img src="images/support/placingorder.png" alt="placingbutton"></button>
+                <button onclick="loadDocPending()" class="supportbutton"><img src="images/support/pendingorder.png" alt="pendingbutton"></button>
+                <button onclick="loadDocShipping()" class="supportbutton"><img src="images/support/shipping.png" alt="shippingbutton"></button>
+                <button onclick="loadDocProblem()" class="supportbutton"><img src="images/support/problemorder.png" alt="problembutton"></button>
+                <button onclick="loadDocReturns()" class="supportbutton"><img src="images/support/returns.png" alt="returnbutton"></button>
+
+            </div>
+
+
+            <div class="upperdivider">
+                <img src="images/home_divider_line.png" alt="divider">
+            </div>
+
+            <div id="demos" class="ajaxsupport">
+
+                <h2 id="faqpink">please click the buttons above to find the answers to our <br> frequently asked questions</h2>
+
+            </div>
+
+
+            <div id="footer">
+
+                <div class="footerdivider">
+                    <img src="images/home_divider_line.png" alt="divider">
+                </div>
+
+                <div id="leftside">
+                    <div id="emailsignup" class="footertext">
+                        <p>
+                            SIGN UP FOR EMAILS!
+                        </p>
+                    </div>
+                    <div id="textbox" class="footertext">
+                        <input type="textbox" placeholder="ENTER YOUR EMAIL ADDRESS...">
+                    </div>
+                    <div id="joinnow">
+                        <button type="submit"><img src="images/join_now_button.png" alt="joinnow"></button>
+                    </div>
+                </div>
+
+                <div id="rightside">
+
+                    <div id="socialbuttons">
+                        <a href='https://www.facebook.com/Plum-Paper-167204733362903/?ref=hl' target="_blank"><img src="images/facebook_icon.jpg" alt="facebook" class="socialicon"></a>
+                        <a href='https://www.instagram.com/plumpaper/' target="_blank"><img src="images/instagram_icon.jpg" alt="instagram" class="socialicon"></a>
+                        <a href='https://www.pinterest.com/plumpaper/' target="_blank"><img src="images/pinterest_icon.jpg" alt="pinterest" class="socialicon"></a>
+                    </div>
+
+
+                    <div id="center">
+                        <img src="images/bottom_nav_line_1.png" alt="divider">
+                        <p class="footertext" id="rightabout">
+                            <a href='about.html'>ABOUT</a> <br> 
+                            <a href='contact.html'>CONTACT</a> 
+                        </p>
+                    </div>
+                    <div id="right">
+                        <img src="images/bottom_nav_line_1.png" alt="divider">
+                        <p class="footertext" id="changesreturns">
+                            <a href='support.html'>FAQs</a> <br> 
+                            <a href='products.html'>PRODUCTS</a>
+                        </p>
+                    </div>
+
+                </div>    
+
+
+                <div class="upperdivider2">
+                    <img src="images/home_divider_line.png" alt="divider">
+                </div>
+
+
+                <p id="copywrite">Plum Paper LLC | &copy; 2016 plumpaper.com</p>
+
+                <p id="email"><a href="mailto:hello@plumpaper.com">hello@plumpaper.com</a></p>
+
+
+            </div>
+
+            <div id="end"></div>
+
+        </div>
+
+
+    </body>
+</html>

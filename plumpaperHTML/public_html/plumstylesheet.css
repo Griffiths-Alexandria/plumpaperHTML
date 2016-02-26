@@ -17,6 +17,28 @@ body {
     /* margin: 10px; */
 }
 
+#signup {
+    font-family: 'contax_pro_45_ligregular',sans-serif;
+    padding-left: 69em;
+    background-color: #fff;
+    z-index: 8;
+    height: 2em;
+    position: relative;
+    padding-top: 40px;
+    display: inline-block;
+    padding-right: 4em;
+}
+
+#signup a {
+    text-decoration: none;
+    color: #be69a1;
+}
+
+#cart {
+    color: #DADADC;
+    font-size: 1.5em;
+    top: 4px;
+}
 
 .body {
     width: 1100px;
@@ -66,6 +88,7 @@ body {
     padding-top: .5em;
     text-align: center;
     padding-bottom: .5em;
+    background-color: #fff;
 }
 
 #design {
@@ -82,11 +105,11 @@ body {
     /* margin: auto; */
     width: 1100px;
     padding-top: .5em;
-    text-align: center; 
+    text-align: center;
     margin-top: 4em;
-    z-index:3; 
-    position: relative; 
-
+    z-index:3;
+    position: relative;
+    /* background-color: #fff; */
 }
 
 #round1 {
@@ -107,9 +130,10 @@ body {
     margin-top: .5em;
     position: absolute;
     display:inline-block;
-    text-align: center; 
+    text-align: center;
     z-index: 2;
     margin-left: 160px;
+    background-color: #fff;
 }
 
 #homepp img{
@@ -126,8 +150,7 @@ body {
 }
 
 #tealbar {
-    margin-left: -2em;
-    width:100%;
+    background-color: #a4ddca; 
 
 }
 
@@ -288,12 +311,13 @@ ul li a:hover + .hidden, .hidden:hover {
 
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
-    font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
     color: #fff;
     background: #a4ddca;
     text-align: center;
     padding: 10px 0;
+    /* margin-bottom: 10px; */
     display: none;
 }
 
@@ -790,7 +814,7 @@ map {
 
 .carousel {
     position: absolute;
-    width: 90%;
+    width: 93%;
     /* border-radius: 25px; */
 }
 
@@ -896,7 +920,7 @@ button {
     position: relative;
     /* display: inline-block; */
     margin-left: 150px;
-    bottom: 3px;
+    bottom: 2.5px;
 }
 
 .footertext {
@@ -1001,19 +1025,25 @@ input {
 
 /***tealbar***/
 
+.tealbar {
+    height: 60px;
+    width: 100%;
+    background-color: #a4ddca;
+}
+
 
 #email a {
     float: right;
     text-decoration: none;
-    color: #a4ddca;
+    color: #fff;
 }
 
 #copywrite {
-    color: #a4ddca;
+    color: #fff;
     z-index: 5;
-    margin-top: 100px;
+    margin-top: 20px;
     padding-left: 45px;
-    position: absolute;
+    position: relative;
     font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
     font-size: 15px;
     z-index: 5;
@@ -1022,8 +1052,7 @@ input {
 }
 
 #email {
-
-    position: absolute;
+    position: relative;
     font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
     font-size: 15px;
     z-index: 6;
@@ -1033,8 +1062,12 @@ input {
     bottom: 30px;
     color: #a4ddca;
     bottom: auto;
-    margin-right: 0px;margin-left: 955px;
-    margin-top: 100px;}
+    /* margin-right: 0px; */
+    margin-left: 755px;
+    margin-top: -30px;
+    /* margin-bottom: 35px; */
+    margin-right: 40px;
+}
 
 .upperdivider2 img {
     position: absolute;
@@ -1052,7 +1085,7 @@ br {
 
 #end {
     width: 100%;
-    height: 150px;
+    height: 75px;
     z-index: 3;
     background-color: #fff;
     /* margin-top: 20px; */
@@ -1098,14 +1131,13 @@ br {
     padding-bottom: 10px;
     font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
     font-size: 11px;
-    background-image: url('images/plum_arrow.jpg');
+    background-image: url('images/plumarrow.png');
     background-size: 150px;
     background-repeat: no-repeat;
     background-position:center;
     color: #fff;
     border: none;
     text-transform: uppercase;
-
 }
 
 button:focus {outline:0;}
@@ -1152,13 +1184,13 @@ button:focus {outline:0;}
 }
 
 .limits img {
-    width: 76%;
+    width: 75%;
     display: block;
     /* margin: auto; */
     position: relative;
     padding-top: 3em;
     /* float: right; */
-    margin-left: 220px;
+    margin-left: 230px;
 }
 
 
@@ -1180,166 +1212,196 @@ button:focus {outline:0;}
     top: 330px;
     left: 525px;
 }
+
+
+
+
+
+
+
 /******************************/
 /*Responsive Styles*/
 /*****************************/
 
 
 
-@media screen and (max-width : 900px){
-    /*Make dropdown links appear inline*/
+@media screen and (max-width: 900px){
+
     .body {
-        width: 90%; 
-        height: 100%;
+        width: 100%; 
+
+    }
+    /***** MOBILE NAV ******/
+
+    nav {
+        width: 100%;
+
     }
 
-    /** grey lines 8**/
-    .footerdivider {
-        display: hidden;
+
+    /*Strip the ul of padding and list styling*/
+    ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        position: absolute;
     }
 
-    .upperdivider {
+    /*Create a horizontal list with spacing*/
+    li {
+        display:inline-block;
+        float: left;
+        margin-right: 1px;
+
+    }
+
+
+    /*Hover state for top level links*/
+    li:hover a {
+        background: none;
+    }
+
+    /*Style for dropdown links*/
+    li:hover ul a {
+        background: #f3f3f3;
+        color: #2f3036;
+
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /*Hover state for dropdown links*/
+    li:hover ul a:hover {
+        background: #fff;
+        color: #fff;
+    }
+
+    /*Hide dropdown links until they are needed*/
+    li ul {
         display: none;
-        /* position: absolute; */
-        /* width: 120px; */
     }
+
+    /*Make dropdown links vertical*/
+    li ul li {
+        display: block;
+        float: none;
+
+    }
+
+    /*Prevent text wrapping*/
+    li ul li a {
+        width: auto;
+        min-width: 100px;
+        padding: 0 20px;
+    }
+
+    /*Display the dropdown on hover*/
+    ul li a:hover + .hidden, .hidden:hover {
+        display: block;
+    }
+
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: .5em;
+        width: 100%;
+        /* visibility: hidden; */
+        text-align: center;
+        padding-right: 6.5em;
+        margin-top: .5em;
+    }
+    /*Make all menu links full width*/
+    ul li a {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px; 
+    }
+
+
+    .show-menu {
+        display:block;
+    }
+
 
     .upperdivider img {
-        position: absolute;
-        display: block;
-        margin-left: 45px;
-        text-align: center;
-        margin-top: 10px;
-        width: 70%;
-    }
+        display: none; 
+    }        
 
-    #homepp {
-        display: none;
-        /* position: absolute; */
-        /* margin-left: 50px; */
-    }
-
-    #roundbuttons {
-        width: 90%;
-        display: inline;
-        padding: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        position: relative;
-        padding-left: 4em;
-    }    
-
-
-
-    /**************ABOUT****************/
-    .font {
-        font-family: 'contax_pro_45_ligregular', sans-serif;
-        font-size: 14px;
-        color: #929395;
-        text-align: center;
-        margin-right: 20px;
-    }
-
-    #abouttxt {
-        position: relative;
-        /* margin-right: 20px; */
-        /* margin-left: 0px; */
-        margin-top: 1em;
-        width: 90%;
-    }
-
-    .header img{
-        position: relative;
-        width: 90%;
-        margin-top: 1em;
-        margin-left: 30px;
-        margin-bottom: 10px;
-    }
-
-    #aboutimages {
-        position: relative;
-        width: 100%;
-        margin-top: 1em;
-    }
-
-    #aboutimages img {
-        width: 80%;
-        display: block;
-        margin-left: 80px;
-    }
-
-    /****FOOTER*****/  
-
+    /**************FOOTER***************/
 
     #footer {
-        margin-top: 0px;
-        /* padding-top: 15em; */
         background-color: #fff;
-        width: 100%;
-        padding-bottom: 250px;
+        margin-top: 3em;
         position: relative;
+        width: 100%;
     }
 
     #rightside {
-        float: right;
+        float: left;
         width: 100%;
         background-color: #fff;
-        padding-bottom: 5px;
-        /* padding-top: 10px; */
-        padding-left: 10px;
-        /* margin-top: 140px; */
-        margin-right: -5px;
+        /* margin-bottom: 50px; */
+        /* padding-top: 5px; */
+        /* margin-right: 6px; */
     }
 
     #right {
         float: right;
         display: inline-block;
         padding-right: 3em;
-
     }
 
     .socialicon {
         width: 30px; 
-        padding-left: 10px;
     }
 
     #leftside {
         float: left;
-        width: 0%;
+        width: 50%;
         display: inline-block;
         background-color: #fff;
-        /* padding-bottom: 50px; */
-        margin-top: 30px;
-        /* margin-left: 10px; */
+        padding-left: 43px;
     }
 
     button {
-        width: 120px;
+        width: 23%;
         background: transparent;
         border: none;
-        margin-top: 40px;
-        margin-left: 37px;
+        /* margin-top: -1px; */
+        margin-left: 200px;
         /* padding-bottom: 10px; */
     }
 
     #joinnow img {
-        width: 100%; 
+        width: 70px;
+        position: relative;
+        /* display: inline-block; */
+        margin-left: 150px;
+        bottom: 2.5px;
     }
 
     .footertext {
         font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
         font-size: .75em;
         color: #929395;
+        /* padding-left: 43px; */
+        /* bottom: 10px; */
     }
 
     #changesreturns {
         float:right;
         color: #929395;
+        padding-top: 10px;
     }
 
     #rightabout {
         float: right;
         color: #929395;
+        padding-top: 10px;
     }
 
     #changesreturns a{
@@ -1351,12 +1413,10 @@ button:focus {outline:0;}
     }
 
     #socialbuttons {
-        padding-left: 0px;
-        float: left;
-        width: 110px;
+        padding-left: 3em;
+        /* float: left; */
+        width: 50%;
         padding-top: 15px;
-        padding-left: 40px;
-        margin-top: 0px;
     }
 
     #socialbuttons img {
@@ -1376,11 +1436,8 @@ button:focus {outline:0;}
     #right {
 
         width: 76px;
-
         padding-right: .5em;
-        margin-left: -90px;
-        margin-right: -10px;
-    }
+        /* margin-left: -90px; *//* margin-right: -10px; *//* height: 20px; */margin-bottom: 10px;}
 
     #right img{
 
@@ -1394,8 +1451,32 @@ button:focus {outline:0;}
     }
 
 
+
+    #emailsignup p {
+        /* padding-left: 43px; */
+        font-size: 11px;
+        /* width: 150px; */
+        margin-top: 10px;
+    }
+
+    input:placeholder-shown {
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+    }
+
+    input {
+        width: 150px;
+        height: 20px;
+        margin-left: 43px;
+        float: left;
+        position: absolute;
+        /* padding-bottom: 10px; */
+        padding-left: 10px;
+    }
+
     .footertext a {
         text-decoration: none;
+        /* padding-top: 10px; */
     }
 
     #socialbuttons a {
@@ -1406,327 +1487,60 @@ button:focus {outline:0;}
 
     /***tealbar***/
 
-    #tealbartext {
-        width: 100%; 
-        display: inline-block;
-        position: relative;
-        z-index: 5;
+    .tealbar {
+        height: 10em;
+        width: 100%;
+        background-color: #a4ddca;
+    }
+
+
+    #email a {
+        float: right;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 20px;
     }
 
     #copywrite {
-        color: #929395;
-        width: 100%;
-        padding-left: 40px;
-        margin-top: 220px;
-        background-color: #fff;
-    }
-
-    #email{
-        margin-top: 200px;
-        /* margin-right: 500px; */
-        margin-left: 100px;
-        /* margin-bottom: 5px; */
-        /* padding-bottom: 15px; */
-        /* padding-left: 100px; */
-        /* padding-right: 900px; */
-        /* padding-top: 15px; */
-        position: absolute;
-        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
-        font-size: 15px;
+        color: #fff;
         z-index: 5;
-        /* width: 700px; */
-        /* float: left; */
-        background-color: #fff;
-    }
-
-    #email a {
-        color: #a4ddca;
-        padding-left: 10px;
-    }
-
-    br {
-        display: block;
-        line-height:22px;
-    }
-
-    #end {
-        display:none;
-    }
-
-
-    /***** MOBILE NAV ******/
-
-
-    /*Make dropdown links appear inline*/
-    nav ul {
+        margin-top: 2.5em;
+        padding-left: 45px;
         position: relative;
-        display: block;
-        border: none;
-        width: 100%;
-        height: inherit;
-        margin-left: 0px;
-        padding: 0px;
-        text-align: center;
-
-    }     
-
-    /*Create vertical spacing*/
-    nav li {
-        margin-bottom: 1px;
-        position: relative;
-        border: none;
-        width: 30%;
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+        z-index: 5;
+        /* width: 40%; */
         float: left;
-        display: inline-block;
-    }
-    /*Make all menu links full width*/
-    ul li, li a {
-        width: 100%;
-        border: none;
     }
 
-    nav li a {
-        border: none;
-        width: 190px;
-        text-align: center;
-        margin: 10px;
-        font-size: 15px;
-    }
-
-    nav li a:hover {
-        border: none;
-        width: 190px;
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 15px;
-    }
-    /*Display 'show menu' link*/
-    .show-menu {
-        display:block;
-    }
-
-    #aboutplum {
-        margin: 0px;
-        border: none;
-    } 
-
-    .footerdivider img {
-        display:none;
+    #email {
+        position: relative;
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+        margin-top: 1em;
+        z-index: 6;
+        float: right;
+        padding-left: 0px;
+        /* width: 100px; */
+        bottom: 30px;
+        color: #a4ddca;
+        bottom: auto;
+        /* margin-right: 0px; */
+        margin-left: 755px;
+        margin-top: -4em;
+        /* margin-bottom: 35px; */
+        margin-right: 40px;
     }
 
     .upperdivider2 img {
-        display: none;
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width : 650px){
-
-    .body {
-        width: 90%; 
-        height: 100%;
-    }
-
-    /** grey lines 8**/
-    .footerdivider {
-        display: none;
-    }
-
-    .upperdivider {
-        display: none; 
-    }
-
-    #homepp {
-        display: none;
-    }
-
-    #roundbuttons {
-        width: 80%;
-        display: inline;
-        padding: 0px;
-        margin-top: 10px;
-        margin-left: 2em;
-        margin-right: auto;
-    }    
-    /****FOOTER*****/    
-    #footer {
-
-        background-color: #fff;
-        margin-top: 0px;
-        /* padding-top: 15em; */
-        background-color: #fff;
-        width: 100%;
-        padding-bottom: 250px;
-        position: relative;
-    }
-
-
-    #rightside {
-        float: right;
-        width: 100%;
-        background-color: #fff;
-        /* padding-bottom: 150px; */
-        padding-top: 0px;
-        padding-left: 10px;
-        /* margin-bottom: 50px; */
-    }
-
-    #right {
-        float: right;
-        display: inline-block;
-        padding-right: 3em;
-
-    }
-
-    .socialicon {
-        width: 30px; 
-        padding-left: 10px;
-    }
-
-    #leftside {
-        float: left;
-        width: 0%;
-        display: inline-block;
-        background-color: #fff;
-        /* padding-bottom: 50px; */
-    }
-
-    button {
-        width: 100px;
-        background: transparent;
-        border: none;
-        margin-top: 40px;
-        margin-left: 37px;
-        padding-bottom: 10px;
-    }
-
-    #joinnow img {
-        width: 100%; 
-    }
-
-    .footertext {
-        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
-        font-size: .75em;
-        color: #929395;
-    }
-
-    #changesreturns {
-        float:right;
-        color: #929395;
-    }
-
-    #rightabout {
-        float: right;
-        color: #929395;
-    }
-
-    #changesreturns a{
-        color: #929395;
-    }
-
-    #rightabout a{
-        color: #929395;
-    }
-
-    #socialbuttons {
-        padding-left: 0px;
-        float: left;
-        width: 110px;
-        padding-top: 15px;
-        padding-left: 40px;
-    }
-
-    #socialbuttons img {
-        padding-left: 2px;
-        padding-right: 2px;
-    }
-
-    #center {
-
-        width: 76px;
-
-        float: right;
-
-        margin-right: 40px;
-    }
-
-    #right {
-
-        width: 76px;
-
-        padding-right: .5em;
-        margin-left: -90px;
-        margin-right: -10px;
-    }
-
-    #right img{
-
-        margin-top: 5px;
-
-    }
-
-    #center img{
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-
-
-    .footertext a {
-        text-decoration: none;
-    }
-
-    #socialbuttons a {
-        text-decoration: none;
-    }
-
-
-
-    /***tealbar***/
-
-    #tealbartext {
-        width: 100%; 
-        display: inline-block;
-        position: relative;
-        z-index: 5;
-    }
-
-    #copywrite {
-        color: #929395;
-        width: 100%;
-        padding-left: 40px;
         position: absolute;
-        margin-top: 230px;
-        padding-bottom: 5px;
-    }
-
-    #email{
-        margin-top: 200px;
-        margin-right: 500px;
-        margin-left: 0px;
-        padding-bottom: 15px;
-        padding-left: 100px;
-        /* padding-top: 35px; */
-        position: absolute;
-        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
-        font-size: 15px;
-        z-index: 5;
-        /* width: 100%; */
-        float: left;
-    }
-
-    #email a {
-        color: #19c589;
-        padding-left: 10px;
-    }
+        display: block;
+        margin-left: 45px;
+        text-align: center;
+        width: 1010px;
+        margin-top: 70px;
+    } 
 
     br {
         display: block;
@@ -1734,87 +1548,43 @@ button:focus {outline:0;}
     }
 
     #end {
-        display:none;
-    }
-
-
-
-
-
-    /**** NAV ****/    
-
-    /*Make dropdown links appear inline*/
-    nav ul {
-        position: relative;
-        display: block;
-        border: none;
-    }     
-
-    /*Create vertical spacing*/
-    ul li {
-        margin-bottom: 1px;
-        position: relative;
-        border: none;
-    }
-    /*Make all menu links full width*/
-    ul li, li a {
         width: 100%;
-        border: none;
+        height: 75px;
+        z-index: 3;
+        background-color: #fff;
+        /* margin-top: 20px; */
     }
 
-    nav li a {
-        border: none;
+    #homepp {
+        background-color: #fff;
     }
+    #banner {
+        background-color: #fff;
+        padding-top: 0px;
+        margin-top:2em;
 
-    nav li a:hover {
-        border: none;
     }
-    /*Display 'show menu' link*/
-    .show-menu {
-        display:block;
-    }
+    
+#signup {
+    font-family: 'contax_pro_45_ligregular',sans-serif;
+    height: auto;
+    display: block;
+    position: relative;
+    padding-top: 3em;
+    /* padding-bottom: 1em; */
+    padding-left: 1em;
+}
 
-    #aboutplum {
-        margin: 0px;
-        border: none;
-    }
-    /**************ABOUT****************/
-    .font {
-        font-family: 'contax_pro_45_ligregular', sans-serif;
-        font-size: 14px;
-        color: #929395;
-        text-align: center;
-        margin-right: 4em;
-    }
+#signup a {
+    text-decoration: none;
+    color: #be69a1;
+    position: relative;
+    font-size: 1em;
+}
 
-    #abouttxt {
-        position: relative;
-        /* margin-right: 20px; */
-        /* margin-left: 0px; */
-        margin-top: 1em;
-        width: 90%;
-    }
-
-    .header img{
-        position: relative;
-        width: 90%;
-        margin-top: 1em;
-        margin-left: 1.5em;
-        margin-bottom: 10px;
-    }
-
-    #aboutimages {
-        position: relative;
-        width: 90%;
-        margin-top: 1em;
-        /* margin-right: 2em; */
-    }
-
-    #aboutimages img {
-        width: 80%;
-        display: block;
-        margin-left: 5em;
-    }
+#cart {
+    color: #DADADC;
+}
 }
 
 

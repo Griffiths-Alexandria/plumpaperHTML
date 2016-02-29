@@ -231,7 +231,7 @@ nav ul {
     width: 100%;
     display: inline-block;
     padding: 0px;
-    margin-left: 45px;
+    margin-left: 95px;
 }
 
 .submenu {
@@ -1177,6 +1177,15 @@ button:focus {outline:0;}
     width: 70%;
 }
 
+.addonheader {
+    width: 95%;
+    padding-bottom: 2em;
+}
+
+.addonheader img {
+    width: 100%;
+}
+
 .limits {
     width: 100%;
     position: relative;
@@ -1573,6 +1582,7 @@ button:focus {outline:0;}
     padding-top: 3em;
     /* padding-bottom: 1em; */
     padding-left: 1em;
+   
 }
 
 #signup a {

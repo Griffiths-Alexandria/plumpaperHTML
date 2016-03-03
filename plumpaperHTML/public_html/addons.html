@@ -7,29 +7,22 @@ and open the template in the editor.
 <html>
     <head>
 
-
         <meta charset="UTF-8">
         <meta name="description" content="Plum Paper">
         <meta name="author" content="Alexandria Lenz">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
         <link type="text/css" rel="stylesheet" href="plumstylesheet.css">
-        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-        <link rel="icon" href="/favicon.png" type="image/x-icon">
+        <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+        <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+        <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/config.json"></script>
 
         <title>Plum Paper Add-ons</title>
         <script>
@@ -212,7 +205,7 @@ and open the template in the editor.
             </div>
 
 
-            <div id="navigation">
+ <div id="navigation">
 
                 <div>
                     <a href="index.html"><img src="images/plum_logo.jpg" alt="logo" id="logo"></a>
@@ -222,29 +215,52 @@ and open the template in the editor.
                     <img src="images/home_divider_line.png" alt="divider">
                 </div>
 
-                <nav>
 
-                    <label for="show-menu" class="show-menu" onclick="">Menu</label>
-                    <input type="checkbox" id="show-menu" role="button">
+                <nav class="navbar navbar-default">
 
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                                                       
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span id="menutitle">Menu</span>
+                                <span class="sr-only">Toggle navigation</span>
+                          
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
 
-                    <ul id="menu">
+                            </button>
+                            
+                        </div>
 
-                        <li ><a href="index.html" title="Home">home</a></li>
-                        <li class="navimage"><a href="products.html" title="products" >learn about our products</a>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="navimage"><a href="index.html" title="Home">home</a></li>
+                                <li class="navimage"><a href="products.html" title="products">learn about our products</a>
 
-                        </li>
-                        <li class="navimage" ><a href="addons.html" title="addons">learn about our add ons</a>
+                                </li>
+                                <li class="navimage"><a href="addons.html" title="addons">learn about our add ons</a>
 
-                        </li>
-                        <li class="navimage" ><a href="shop.html" title="shop">shop</a></li>
-                        <li class="navimage"><a href="plumsupport.html" title="faqs" >support</a>
+                                </li>
+                                <li class="navimage"><a href="shop.html" title="shop">shop</a></li>
+                                <li class="navimage"><a href="plumsupport.html" title="faqs">support</a>
 
-                        </li>
-                        <li><a href="about.html" title="about" id="aboutplum">about plum</a></li>
-                    </ul>
-
+                                </li>
+                                <li class="navimage"><a href="about.html" title="about" id="aboutplum">about plum</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
                 </nav>
+
+
+                <div class="upperdivider">
+                    <img src="images/home_divider_line.png" alt="divider">
+                </div>
+
             </div>
 
             <div class="upperdivider">
@@ -252,8 +268,6 @@ and open the template in the editor.
             </div>
 
             <div class="ajax">
-
-
 
                 <div id="demo" class="ajaxbody">
 
@@ -272,23 +286,23 @@ and open the template in the editor.
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="images/carousel/slide_1.jpg" alt="Chania" width="460" height="345">
+                                    <img src="images/addonheaders/blog.png" alt="blog" width="460" height="345">
                                 </div>
 
                                 <div class="item">
-                                    <img src="images/carousel/slide_2.jpg" alt="Chania" width="460" height="345">
+                                    <img src="images/addonheaders/directsales.png" alt="Chania" width="460" height="345">
                                 </div>
 
                                 <div class="item">
-                                    <img src="images/carousel/slide_3.jpg" alt="Flower" width="460" height="345">
+                                    <img src="images/addonheaders/notes.png" alt="Flower" width="460" height="345">
                                 </div>
 
                                 <div class="item">
-                                    <img src="images/carousel/slide_4.jpg" alt="Flower" width="460" height="345">
+                                    <img src="images/addonheaders/wedding.png" alt="Flower" width="460" height="345">
                                 </div>
 
                                 <div class="item">
-                                    <img src="images/carousel/slide_5.jpg" alt="Flower" width="460" height="345">
+                                    <img src="images/addonheaders/myhome.png" alt="Flower" width="460" height="345">
                                 </div>
                             </div>
 
@@ -301,7 +315,7 @@ and open the template in the editor.
                                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                   <span class="sr-only">Next</span> 
                             -->
-                            </a>
+                          
                         </div>
                     </div>
 
@@ -327,7 +341,7 @@ and open the template in the editor.
                     <button onclick="loadDoc13()" class="addonbutton">Cleaning Pages</button>
                     <button onclick="loadDoc14()" class="addonbutton">Checklist Pages</button>
                     <button onclick="loadDoc15()" class="addonbutton">Contact Pages</button>
-                    <button onclick="loadDoc16()" class="addonbutton">Stickers</button>
+                    <button onclick="loadDoc16()" class="addonbutton">Removable Stickers</button>
                 </div>
 
             </div>
@@ -369,13 +383,13 @@ and open the template in the editor.
                         <img src="images/bottom_nav_line_1.png" alt="divider">
                         <p class="footertext" id="rightabout">
                             <a href='about.html'>ABOUT</a> <br> 
-                            <a href='contact.html'>CONTACT</a> 
+                            <a href='plumsupport.html'>CONTACT</a> 
                         </p>
                     </div>
                     <div id="right">
                         <img src="images/bottom_nav_line_1.png" alt="divider">
                         <p class="footertext" id="changesreturns">
-                            <a href='faq.html'>FAQs</a> <br> 
+                            <a href='plumsupport.html'>FAQs</a> <br> 
                             <a href='products.html'>PRODUCTS</a>
                         </p>
                     </div>

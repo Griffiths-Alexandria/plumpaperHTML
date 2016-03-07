@@ -157,11 +157,11 @@ body {
 }
 
 .footerdivider img{
-    position: absolute; 
+    position: absolute;
     display: block;
-    margin-left: 45px; 
+    margin-left: 45px;
     text-align: center;
-    width: 1010px; 
+    width: 60%;
 }
 
 #tealbar {
@@ -878,12 +878,12 @@ map {
 }
 
 .clickover {
-    position: absolute;
-    margin-top: 320px;
+    position: relative;
+    margin-top: 5px;
     font-family: 'contax_pro_45_ligregular', sans-serif;
     font-size: 14px;
     color: #929395;
-    text-align: center;
+    text-align: left;
 }
 
 .font {
@@ -1201,6 +1201,7 @@ button:focus {outline:0;}
     float: right;
     width: 80%;
     /* margin-bottom: 10px; */
+    /* text-align: left; */
 }
 
 .ajax {
@@ -1217,7 +1218,7 @@ button:focus {outline:0;}
 .ajaxproducts {
     display: block;
     width: 100%;
-    height: 450px;
+    height: 600px;
     background-color: #fff;
     position: relative;
     /* padding-bottom: 10px; */
@@ -1242,7 +1243,6 @@ button:focus {outline:0;}
 .limits {
     width: 100%;
     position: relative;
-    /* float: right; */
 }
 
 .limits img {
@@ -1253,6 +1253,7 @@ button:focus {outline:0;}
     padding-top: 3em;
     /* float: right; */
     margin-left: 220px;
+    /* margin-top: 10px; */
 }
 
 
@@ -1824,7 +1825,8 @@ button:focus {outline:0;}
 
     .ajax {
 
-        position: relative;height: auto;}
+        position: relative;
+        height: auto;}
 
     #end {
         /* display: none; */
@@ -1836,6 +1838,504 @@ button:focus {outline:0;}
 
 }
 
+/*******************************************MOBILE PHONE***********************/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2){
 
+    .body {
+        width: 100%; 
+
+    }
+    
+    #logo {
+        width: 100%;
+    }
+
+    #banner {
+        width: 100%;
+    }
+    
+    #mobile {
+        display: block;
+        font-family: 'contax_pro_45_ligregular',sans-serif;
+        font-size: 14px;
+        color: #be69a1;
+        position: relative;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+    color: #777;
+    font-size: 18px;
+    }
+   
+    #menutitle {
+        font-size: 18px;
+    }
+    /***************INDEX****************/
+    
+    #designhandmade {
+        display: none; 
+    }
+ 
+     /**************FOOTER***************/
+
+    #footer {
+        background-color: #fff;
+        /* margin-top: 70em; */
+        position: relative;
+        width: 100%;
+        display: block;
+        /* margin-top: 0px; */
+    }
+
+    #rightside {
+        float: none;
+        width: 100%;
+        background-color: #fff;
+        /* margin-bottom: 50px; */
+        /* padding-top: 5px; */
+        /* margin-right: 6px; */
+        position: relative;
+    }
+
+    #right {
+        float: right;
+        display: inline-block;
+        padding-right: 3em;
+    }
+
+    .socialicon {
+        width: 30px; 
+    }
+
+    #leftside {
+        float: none;
+        width: 100%;
+        display: none;
+        background-color: #fff;
+        padding-left: 70px;
+        position: relative;
+    }
+
+    button {
+        width: 23%;
+        background: transparent;
+        border: none;
+        /* margin-top: -1px; */
+        margin-left: 200px;
+        /* padding-bottom: 10px; */
+    }
+
+    #joinnow img {
+        width: 70px;
+        position: relative;
+        /* display: inline-block; */
+        margin-left: 150px;
+        bottom: 2.5px;
+    }
+
+    .footertext {
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+        color: #929395;
+        /* padding-left: 43px; */
+        /* bottom: 10px; */
+    }
+
+    #changesreturns {
+        float: right;
+        color: #929395;
+        padding-top: 0px;
+        width: 100%;
+        font-size: 1em;
+        position: relative;
+        padding-right: 00px;
+    }
+
+    #rightabout {
+        clear: both;
+        color: #929395;
+        padding-top: 10px;
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    #changesreturns a{
+        color: #929395;
+    }
+
+    #rightabout a{
+        color: #929395;
+        width: 100%;
+    }
+
+    #socialbuttons {
+        padding-left: 0px;
+        /* float: none; */
+        width: 100%;
+        /* padding-top: 15px; */
+        background-color: #fff;
+        text-align: center;
+    }
+
+    #socialbuttons img {
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 20%;
+    }
+
+    #center {width: 100%;float: right;margin-right: 0px;/* float: none; */background-color: #fff;}
+
+    #right {
+        width: 100%;
+        padding-right: 0px;
+        /* margin-left: -90px; */
+        /* margin-right: -10px; */
+        /* height: 20px; */
+        margin-bottom: 10px;
+        text-align: center;
+        }
+
+    #right img{display: none;}
+
+    #center img{
+        margin-left: 10px;
+        margin-top: 5px;
+        display: none;
+    }
+
+
+
+    #emailsignup p {
+        /* padding-left: 43px; */
+        font-size: 11px;
+        /* width: 150px; */
+        margin-top: 10px;
+    }
+
+    input:placeholder-shown {
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+    }
+
+    input {
+        width: 150px;
+        height: 20px;
+        margin-left: 43px;
+        float: left;
+        position: absolute;
+        /* padding-bottom: 10px; */
+        padding-left: 10px;
+    }
+
+    .footertext a {
+        text-decoration: none;
+        /* padding-top: 10px; */
+    }
+
+    #socialbuttons a {
+        text-decoration: none;
+    }
+
+
+
+    /***tealbar***/
+
+    .tealbar {
+        height: 5em;
+        width: 100%;
+        background-color: #a4ddca;
+        position: relative;
+        /* margin-top: 10em; */
+        /* display: none; */
+        clear: both;
+    }
+
+
+    #email a {
+        float: right;
+        text-decoration: none;
+        color: #fff;
+        /* margin-top: 20px; */
+    }
+
+    #copywrite {
+        color: #fff;
+        z-index: 5;
+        /* margin-top: 2.5em; */
+        /* padding-left: 45px; */
+        /* position: relative; */
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+        z-index: 5;
+        /* width: 40%; */
+        /* float: left; */
+    }
+
+    #email {
+        position: relative;
+        font-family: 'contax_pro_45_ligregular', Helvetica, Arial, sans-serif;
+        font-size: .75em;
+        margin-bottom: em;
+        z-index: 6;
+        /* float: right; */
+        /* padding-left: 0px; */
+        /* width: 100px; */
+        bottom: 30px;
+        color: #a4ddca;
+        /* bottom: auto; */
+        /* margin-right: 0px; */
+        /* margin-left: 755px; */
+        margin-top: 20px;
+        /* margin-bottom: 35px; */
+        /* margin-right: 40px; */
+        /* margin: auto; */
+        top: 1px;
+    }
+
+    .upperdivider2 img {
+        position: absolute;
+        display: block;
+        margin-left: 45px;
+        text-align: center;
+        width: 1010px;
+        margin-top: 70px;
+    } 
+
+    br {
+        display: block;
+        line-height:22px;
+    }
+
+    #end {
+        width: 100%;
+        height: 75px;
+        z-index: 3;
+        background-color: #fff;
+        /* margin-top: 20px; */
+        position: relative;
+        display: block;
+    }
+
+    #homepp {
+        background-color: #fff;
+    }
+    #banner {
+        background-color: #fff;
+        padding-top: 0px;
+        margin-top:2em;
+
+    }
+
+    #signup {
+        font-family: 'contax_pro_45_ligregular',sans-serif;
+        height: auto;
+        display: block;
+        position: relative;
+        padding-top: 3em;
+        /* padding-bottom: 1em; */
+        padding-left: 1em;
+
+    }
+
+    #signup a {
+        text-decoration: none;
+        color: #be69a1;
+        position: relative;
+        font-size: 1em;
+    }
+
+    #cart {
+        color: #DADADC;
+    }
+
+    /***** INDEX ******/
+
+    #banner {
+        display: none;
+    }
+    
+    #homepp {
+        display: none; 
+    }
+
+    #roundbuttons {
+        width: 100%;
+    }
+    
+    #round1 {
+        width: 70%;
+        padding-top: 0px;
+    }
+    
+    #round2 {
+        width: 75%;
+        padding-top: 1em;
+    }
+    
+    #round3 {
+        width: 70%;
+        padding-top: 1em;
+    }
+
+    /***** ABOUT ******/
+
+    .header img {
+        width: 100%;
+        margin-left: 0px;
+        background-color: #fff;
+        padding-bottom: 10px;
+        position: relative; 
+        margin-bottom: 0px;
+    }
+
+    #abouttxt {
+        background-color: #fff;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 1em;
+    }
+
+    #aboutimages img {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .header {
+        position: relative; 
+        display: block; 
+    }
+
+    /***** PRODUCTS ******/
+
+    .addonimages img{
+        width: 100%;
+    }
+    .ajaxproducts {
+        position: relative;
+        height: auto;
+    }  
+
+    #myCarousel {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .sidenav {
+        position: relative;
+        /* padding-top: 10em; */
+        width: 100%;
+        /* height: 200px; */
+        text-align: center;
+        display: inline-block;
+        margin-left: 1em;
+        /* padding-bottom: 10px; */
+        padding-right: 30px;
+        /* background-color: #fff; */
+        float: none;
+        padding-bottom: 0px;
+    }
+
+    .addonbutton {
+        text-align: center;
+        width: 80px;
+        background-color: #a4ddca;
+        height: 70px;
+        margin-top: 10px;
+        color: #fff;
+        font-size: .75em;
+        margin-left: 1em;
+        display: table-column;
+        position: relative;
+        vertical-align: top;
+    }
+
+    .addonbutton:hover {
+        background-image: none;
+        text-align: center;
+        width: 80px;
+        background-color: #c2c3c5;
+        height: 70px;
+        margin-top: 10px;
+        color: #fff;
+        font-size: .75em;
+        margin-left: 1em;
+        display: table-column;
+        position: relative;
+        vertical-align: top;
+        padding-left: 5px;
+    }
+
+
+
+    .ajaxbody {
+        width: 100%;
+        position: relative;
+        background-color: #fff;
+        float: none;
+        margin-left: 0px;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .clickover {
+        display: none;
+    }
+
+    .limits {
+        display: none; 
+    }
+
+    .fullnav {
+
+        display: none;
+    }
+
+    #mobilenav {
+        display: block; 
+        visibility: visible; 
+    }
+
+    .upperdivider, .upperdivider2 {
+        display: none;
+        position: relative;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+    .footerdivider {
+        display: block;
+        width: 327px;
+    }
+
+    #color {
+        color: #be69a1;
+        color: #a4ddca;
+
+    }
+
+    /********** ADDONS ***********/
+
+    .ajax {
+
+        position: relative;
+        height: auto;}
+
+    #end {
+        /* display: none; */
+        clear: both;
+        height: 0px;
+    }
+
+
+
+}
 
 

@@ -161,7 +161,7 @@ body {
     display: block;
     margin-left: 45px;
     text-align: center;
-    width: 60%;
+    width: 93%;
 }
 
 #tealbar {
@@ -884,6 +884,7 @@ map {
     font-size: 14px;
     color: #929395;
     text-align: left;
+    display: none;
 }
 
 .font {
@@ -1845,8 +1846,7 @@ button:focus {outline:0;}
   and (-webkit-min-device-pixel-ratio: 2){
 
     .body {
-        width: 100%; 
-
+        width: 90%;
     }
     
     #logo {
@@ -2311,8 +2311,8 @@ button:focus {outline:0;}
     }
 
     .footerdivider {
-        display: block;
-        width: 327px;
+        display: none;
+        /* width: 327px; */
     }
 
     #color {
@@ -2334,7 +2334,9 @@ button:focus {outline:0;}
         height: 0px;
     }
 
-
+    .footerdivider img {
+        display:none;
+    }
 
 }
 

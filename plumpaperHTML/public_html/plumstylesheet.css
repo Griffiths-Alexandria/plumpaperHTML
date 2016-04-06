@@ -8,6 +8,10 @@ and open the template in the editor.
     Author     : Alexandria Lenz
 */
 
+* {
+    font-family: 'contax_pro_45_ligregular',Helvetica,Arial,sans-serif;
+}
+
 
 body {
     background-image: url(images/background.jpg);
@@ -65,6 +69,146 @@ body {
     /* height: 1300px; */
 }
 
+/**** SHOP PAGE *******/
+.bundle {
+    width: 20%; 
+    display: inline-block;
+}
+
+.shopdesc {
+    width: 100%; 
+}
+
+#topshop {
+
+    text-align: center; 
+}
+
+#topshop img {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+#middleshop {
+    text-align: center; 
+}
+
+#middleshop img {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+#bottomshop {
+    text-align: center; 
+}
+
+#bottomshop img {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+.shopbutton {
+    color: #fff;
+    background-color: #a4ddca;
+    border-color: #a4ddca;
+    width: 80%; 
+}
+
+.shopbutton:hover {
+    color: #fff;
+    background-color: #be69a1;
+    border-color: #be69a1;
+}
+
+.shopheader {
+    margin-top: 20px;
+    text-align: center; 
+    color: #929395; 
+}
+
+.shopsubheader {
+    float: right; 
+    color: #929395; 
+}
+
+#shopCarousel {
+    width: 100%;
+    /* margin: auto; */
+    margin-left: 45px;
+    margin-top: 20px; 
+}
+
+a.leftcontrol {
+
+}
+
+a.rightcontrol {
+    float: right; 
+}
+
+
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: #a4ddca;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.carousel-caption h3 {
+    position: fixed;
+    left: 15%;
+    right: 15%;
+    bottom: 0px;
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 275px;
+    color: black; 
+    background-color: #fff;
+    text-align: center;
+    /* text-shadow: 0 1px 2px rgba(0,0,0,0.6); */
+    opacity: .5;
+    text-transform: uppercase;
+    text-shadow: none; 
+}
+
+.carousel-caption {
+    left: 20%;
+    right: 20%;
+    margin-bottom: 270px;
+    /* top: 10px; */
+    /* padding-bottom: 0px; */
+}
+
+ #car {
+    float:left;
+    width: 50%;
+}
+
+#desc {
+    float: right;
+    width: 35%;
+    margin-right: 60px;
+    color: #929395
+}
+
+#desc h3 {
+    color: #be69a1;
+}
+
+#desc h4 {
+    color: #a4ddca
+}
 /***** HOME PAGE ******/
 
 #banner {
@@ -1277,7 +1421,9 @@ button:focus {outline:0;}
     left: 525px;
 }
 
-
+.item {
+    width: 100%; 
+}
 
 
 
@@ -1835,20 +1981,51 @@ button:focus {outline:0;}
         height: 0px;
     }
 
+    /********* SHOP CAROUSELS*******/
+    .carousel-caption h3 {
+    position: fixed;
+    left: 15%;
+    right: 15%;
+    bottom: 0px;
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: #fff;
+    text-align: center;
+    /* text-shadow: 0 1px 2px rgba(0,0,0,0.6); */
+    opacity: .5;
+    text-transform: uppercase;
+    text-shadow: none; 
+}
 
+.carousel-caption {
+    left: 20%;
+    right: 20%;
+    margin-bottom: 270px;
+    /* top: 10px; */
+    /* padding-bottom: 0px; */
+}
+
+#shopCarousel {
+    width: 80%;
+    /* margin: auto; */
+    margin: auto; 
+}
 
 }
 
 /*******************************************MOBILE PHONE***********************/
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2){
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2){
 
     .body {
         width: 90%;
     }
-    
+
     #logo {
         width: 100%;
     }
@@ -1856,7 +2033,7 @@ button:focus {outline:0;}
     #banner {
         width: 100%;
     }
-    
+
     #mobile {
         display: block;
         font-family: 'contax_pro_45_ligregular',sans-serif;
@@ -1864,22 +2041,22 @@ button:focus {outline:0;}
         color: #be69a1;
         position: relative;
     }
-    
+
     .navbar-default .navbar-nav>li>a {
-    color: #777;
-    font-size: 18px;
+        color: #777;
+        font-size: 18px;
     }
-   
+
     #menutitle {
         font-size: 18px;
     }
     /***************INDEX****************/
-    
+
     #designhandmade {
         display: none; 
     }
- 
-     /**************FOOTER***************/
+
+    /**************FOOTER***************/
 
     #footer {
         background-color: #fff;
@@ -1997,7 +2174,7 @@ button:focus {outline:0;}
         /* height: 20px; */
         margin-bottom: 10px;
         text-align: center;
-        }
+    }
 
     #right img{display: none;}
 
@@ -2157,7 +2334,7 @@ button:focus {outline:0;}
     #banner {
         display: none;
     }
-    
+
     #homepp {
         display: none; 
     }
@@ -2165,17 +2342,17 @@ button:focus {outline:0;}
     #roundbuttons {
         width: 100%;
     }
-    
+
     #round1 {
         width: 70%;
         padding-top: 0px;
     }
-    
+
     #round2 {
         width: 75%;
         padding-top: 1em;
     }
-    
+
     #round3 {
         width: 70%;
         padding-top: 1em;

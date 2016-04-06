@@ -123,6 +123,21 @@ body {
     border-color: #be69a1;
 }
 
+.orderbutton {
+    color: #fff;
+    background-color: #a4ddca;
+    border-color: #a4ddca;
+    width: 80%; 
+    padding: 20px;
+}
+
+.orderbutton:hover {
+    color: #fff;
+    background-color: #be69a1;
+    border-color: #be69a1;
+    padding: 20px;
+}
+
 .shopheader {
     margin-top: 20px;
     text-align: center; 
@@ -138,7 +153,7 @@ body {
     width: 100%;
     /* margin: auto; */
     margin-left: 45px;
-    margin-top: 20px; 
+    margin-top: 30px; 
 }
 
 a.leftcontrol {
@@ -192,14 +207,16 @@ a.rightcontrol {
 
  #car {
     float:left;
-    width: 50%;
+    width: 60%;
 }
 
 #desc {
     float: right;
     width: 35%;
-    margin-right: 60px;
-    color: #929395
+    margin-right: 80px;
+    color: #929395;
+    margin-top: 5px;
+        
 }
 
 #desc h3 {

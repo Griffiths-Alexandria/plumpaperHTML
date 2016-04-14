@@ -70,6 +70,13 @@ body {
 }
 
 /**** SHOP PAGE *******/
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
 .bundle {
     width: 20%; 
     display: inline-block;
@@ -1512,6 +1519,21 @@ button:focus {outline:0;}
         text-transform: uppercase;
         text-shadow: none;
     }
+    
+    #myCarousel {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.ajaxbody {
+    position: relative;
+    display: block;
+    float: right;
+    width: 80%;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 5px;
+}
 
     @media screen and (max-width: 992px){
         .carousel-caption h3 {

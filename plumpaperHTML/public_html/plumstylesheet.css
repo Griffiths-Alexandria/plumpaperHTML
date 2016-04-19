@@ -14,7 +14,7 @@ and open the template in the editor.
 
 
 body {
-    background-image: url(images/background.jpg);
+   
     /* height: 1200px; */
     z-index: -1;
     margin-bottom: 0px;
@@ -66,6 +66,7 @@ body {
     background-color: #fff;
     z-index:0;
     margin-top: -2em;
+    
     /* height: 1300px; */
 }
 
@@ -449,7 +450,7 @@ area {
 
 
 .navbar-default .navbar-nav>li>a {
-    font-family: sans-serif;
+    font-family: Open Sans;
     font-weight: 100;
     display: inline-block;
     text-align: center;
